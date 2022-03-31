@@ -1,0 +1,4 @@
+BEGIN
+	Input Math,Physics,Chemistry
+	Display DTB= (Math + Physics + Chemistry) / 3
+END

@@ -1,0 +1,4 @@
+Begin
+	Input Dola
+	display vnd = Dola * 23000
+End
