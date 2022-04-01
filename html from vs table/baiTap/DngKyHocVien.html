@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+       .a{
+           box-shadow: 5px 10px 5px  #AAA;
+           border-radius: 10px;
+           margin: auto;
+           padding-left: 10px;
+           height: 380px; width: 280px;
+           border: 1px solid black;
+           font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+       }
+    </style>
+</head>
+<body style="background-color: palegoldenrod">
+    <form style="margin-top: 70px; ">
+        <table class="a">
+            <tr style="color: blue" >
+                <th colspan="3"> Đăng ký học viên</th>
+            </tr>
+            <tr>
+                <td>
+                    <label for="txtUsername">Username</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="username" id="txtUsername" name="username">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label >Age</label>
+                </td>
+                <td>
+                    <input type="number" name="q">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label >Gender</label>
+                </td>
+                <td>
+                    <input type="radio" name="gender"> Nam
+                    <input type="radio" name="gender"> Nữ
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label >Content</label>
+                </td>
+                <td>
+                    <textarea></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label >City</label>
+                </td>
+                <td>
+                    <select >
+                        <option>--Chọn lớp--</option>
+                        <option>lớp 1</option>
+                        <option>lớp 2</option>
+                        <option>lớp 3</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="txtEMAIL">EMAIL</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="@gmail.com" id="txtEMAIL" name="EMAIL">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Điện thoại</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="SDT" >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Create">
+                </td>
+                <td>
+                    <input type="reset" value="Clear">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
