@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>Caculator</h2>
+    <table >
+        <tr>
+            <td colspan="2">
+                <input type="number" id="na">
+            </td>
+            <td colspan="2">
+                <input type="number" id="nb">
+            </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="Addition(+)" onclick="ketqua('cong')"></td>
+            <td><input type="button" value="Subtraction(-)" onclick="ketqua('tru')"></td>
+            <td><input type="button" value="Multiplication(x)" onclick="ketqua('nhan')"></td>
+            <td><input type="button" value="Division(/)" onclick="ketqua('chia')"></td>
+        </tr>
+    </table>
+    <span>Result :</span><span id="kq"></span>
+<script>
+    function ketqua(i) {
+        let inputna = parseFloat(document.getElementById('na').value);
+        let inputnb = parseFloat(document.getElementById('nb').value);
+        if(i === 'cong'){
+            document.getElementById('kq').innerHTML= inputna + inputnb;
+        }else if (i === 'tru'){
+            document.getElementById('kq').innerHTML= inputna - inputnb;
+        }else if (i === 'nhan'){
+            document.getElementById('kq').innerHTML= inputna * inputnb;
+        }else if (i === 'chia'){
+            document.getElementById('kq').innerHTML= inputna / inputnb;
+        }
+    }
+
+</script>
+</body>
+</html>
