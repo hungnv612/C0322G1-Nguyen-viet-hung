@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let income = parseInt(prompt('Nhập số tiền lương của bạn:'));
+    if (income >= 20000000) {
+        let result = (income * 15) / 100;
+        alert('Thuế thu nhập là : ' + result)
+    } else if (income >= 10000000) {
+        let result = (income * 10) / 100;
+        alert('Thuế thu nhập là : ' + result)
+    } else {
+        alert('Không Tính thuế')
+    }
+</script>
+</body>
+</html>

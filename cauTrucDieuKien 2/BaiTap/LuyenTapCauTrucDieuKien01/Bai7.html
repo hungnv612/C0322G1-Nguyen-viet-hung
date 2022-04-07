@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt('Nhập số phút đã sử dụng: '));
+    const b = 25000;
+    if (a <= 50) {
+        let result = b + 600 * a;
+        alert(result + " VND");
+    } else if (a < 200) {
+        let result = b + 600 * 50 + 400 * (a % 50);
+        alert(result + " VND");
+    } else if (a > 200) {
+        let result = a + 600 * 50 + 400 * 150 + 200 * (a % 200);
+        alert(result + " VND");
+    } else {
+        alert(b +" VND");
+    }
+</script>
+</body>
+</html>

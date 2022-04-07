@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let money = parseInt(prompt('Nhập số tiền gửi: '));
+    let year = parseInt(prompt('Nhập số năm gửi tiền: '));
+    let result = parseInt(money * Math.pow((1 + 0.08 / 12), year) - money)
+    alert('Tiền lãi: ' + result + 'VNĐ');
+    let sum = parseInt(result + money);
+    alert('Tiền lãi và gốc là ' + sum + 'VNĐ');
+</script>
+</body>
+</html>

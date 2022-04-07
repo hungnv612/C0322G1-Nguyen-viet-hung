@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let A = parseInt(prompt('Nhập cạnh a: '));
+        let B = parseInt(prompt('Nhập cạnh b: '));
+        let C = parseInt(prompt('Nhập cạnh c: '));
+        let rA = (A + B) > C;
+        let rB = (B + C) > A;
+        let rC = (A + C) > B;
+
+        if (rA > 0  && rB > 0 && rC > 0) {
+            if  (rA && rB && rC ) {
+                alert('Cạnh a là: ' + A);
+                alert('Cạnh b là: ' + B);
+                alert('Cạnh c là: ' + C);
+            } else {
+                alert('Không phải là cạnh của tam giác');
+            }
+        } else {
+            alert('Không phải là cạnh của tam giác');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="number" id="a">
+    <input type="button"  value="xét" id="kq" onclick="tab()" ><br>
+    <label id="txttab"></label>
+    <script>
+        function tab() {
+            let a = document.getElementById('a').value;
+            if (a > 0) {
+                document.getElementById('txttab').innerText = a + " > 0";
+            } else if (a == 0){
+                document.getElementById('txttab').innerText = a + " = 0 ";
+            }else {
+                document.getElementById('txttab').innerText = a + " < 0 ";
+            }
+        }
+    </script>
+</body>
+</html>

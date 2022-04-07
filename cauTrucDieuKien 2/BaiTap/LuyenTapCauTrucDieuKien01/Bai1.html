@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="number" id="a">
+    <input type="number" id="b">
+    <input type="button"  value="Kết Quả" id="kq" onclick="tab()" ><br>
+    <label id="txttab"></label>
+<script>
+    function tab() {
+        let a = document.getElementById('a').value;
+        let b = document.getElementById('b').value;
+        if (!(a/b)) {
+            document.getElementById('txttab').innerText = a + " Chia hết cho " + b;
+        } else {
+            document.getElementById('txttab').innerText = a + " ko Chia hết cho " + b;
+        }
+    }
+</script>
+</body>
+</html>
