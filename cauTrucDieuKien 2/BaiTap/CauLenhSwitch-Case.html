@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="number" id="a">
+    <input type="button"  value="Tính số ngày" id="b" onclick="tab()" ><br>
+<label id="txttab"></label>
+<script>
+
+    function tab() {
+        let inputMonth = document.getElementById('a').value;
+        switch (parseInt(inputMonth)) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 9:
+            case 11:
+                document.getElementById('txttab').innerText = 'tháng' + ' ' + inputMonth + ' ' + 'có 31 ngày';
+                break;
+            case 2:
+                document.getElementById('txttab').innerText = 'Tháng 2 có 28 hoặc 29 ngày';
+                break;
+            case 4:
+            case 6:
+            case 8:
+            case 10:
+            case 12:
+                document.getElementById('txttab').innerText = 'tháng' + ' ' + inputMonth + ' ' + 'có 31 ngày';
+                break;
+            default:
+                alert('Null');
+        }
+    }
+
+</script>
+</body>
+</html>
