@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<input id="nhap" type="text" placeholder="Nhập loại quả">
+<input type="button" value="Tìm" onclick="chay()">
+<script>
+
+
+    let English = ["apple", "pear", "grape", "strawberry", "guava"];
+    let viet = ["táo", "lê", "nho", "dâu", "ổi"];
+
+    function chay() {
+        for (let i = 0; i < English.length; i++) {
+            let a = document.getElementById("nhap").value;
+            let flal = true;
+            if (a === English[i]) {
+                alert(viet[i]);
+                break;
+
+            } else if (a === viet[i]) {
+                alert(English[i]);
+                break;
+            } else {
+                flal = false;
+                console.log(flal);
+            }
+        }
+        if (flal === false) {
+            alert("ko tìm thấy");
+        }
+    }
+
+</script>
+</body>
+</html>
