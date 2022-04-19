@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let arrayA = Array();
+    for (let j = 0; j < 5; j++) {
+        arrayA[j] = prompt('Nhập vào mảng 5 kí tự bất kì: ');
+    }
+    let inputInt = prompt('Nhập vào một kí tự để tìm kiếm trong mảng: ');
+
+    function checkInt() {
+        let count = 0;
+        let flag = false;
+        let result;
+        for (let i = 0; i < arrayA.length; i++) {
+            if (inputInt === arrayA[i]) {
+                flag = true;
+                count++;
+            }
+        }
+
+        if (flag === true) {
+            result = 'Số lần xuất hiện là: ' + count;
+        } else {
+            result = 'Không tìm thấy giá trị: -1';
+        }
+
+        return (result);
+    }
+
+    document.write(checkInt())
+</script>
+</body>
+</html>

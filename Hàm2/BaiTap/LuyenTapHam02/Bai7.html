@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt('Nhập số nguyên thứ nhất: '));
+        let m= parseInt(prompt('Nhập số nguyên thứ hai: '));
+
+        function convertInt(a,b) {
+            let c = a;
+            a = b;
+            b = c;
+            return (a + '<==>' + b);
+        }
+
+        document.write(convertInt(n,m))
+    </script>
+</body>
+</html>

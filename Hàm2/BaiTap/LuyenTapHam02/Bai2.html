@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>
+    <span>chu vi : <label id="chuvi"></label></span>
+</p>
+<hr>
+<p>
+    <span>diện tích : <label id="dientich"></label></span>
+</p>
+
+    <script>
+        let a = parseInt(prompt("Nhập bán kính"));
+        function chuvi() {
+           b = 2*a*3.14;
+           document.getElementById("chuvi").innerHTML=b;
+        }
+        chuvi()
+
+        function dientich() {
+            b = a*a*3.14;
+            document.getElementById("dientich").innerHTML=b;
+        }
+        dientich()
+
+    </script>
+</body>
+</html>

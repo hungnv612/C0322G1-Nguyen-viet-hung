@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>
+    <label>Nhập feet: </label>
+    <input id="footToMeter" type="number" placeholder="Fahrenheit"
+           oninput="footToMeter(this.value)"
+           onchange="footToMeter(this.value)">
+</p>
+<p>meter: <span id="xuat1"></span></p>
+<p>
+    <label>Nhập meter: </label>
+    <input id="meterToFoot" type="number" placeholder="Fahrenheit"
+           oninput="meterToFoot(this.value)"
+           onchange="meterToFoot(this.value)">
+</p>
+<p>feet: <span id="xuat2"></span></p>
+    <script>
+        function footToMeter(foot){
+                let meter = 0.305 * foot
+            document.getElementById("xuat1").innerHTML = meter.toFixed(3);
+        }
+        function meterToFoot(meter){
+            let foot = 3.279 * meter;
+            document.getElementById("xuat2").innerHTML = foot.toFixed(3);
+        }
+        // function footToMeter(foot){
+        //     let meter = 0.305 * foot
+        //     return meter;
+        // }
+        // function meterToFoot(meter){
+        //     let foot = 3.279 * meter
+        //     return foot;
+        // }
+        // let foot = parseFloat(prompt("Nhập feet..."));
+        // a = footToMeter(foot);
+        // document.write(a);
+        // document.write("<hr>");
+        // let meter = parseFloat(prompt("Nhập meter...."));
+        // b = meterToFoot(meter);
+        // document.write(b);
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p><label>star: </label>"Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"</p>
+<p><label>Chòm star: </label>"Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"</p>
+<p>
+    <label>Nhập star: </label>
+    <input id="footToMeter" type="text"
+           oninput="instar(this.value)"
+           onchange="instar(this.value)">
+</p>
+<p>chomStar: <span id="xuat1"></span></p>
+<script>
+    let star = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let chomStar = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    let a;
+
+    function f(star, chomStar, a) {
+         a = document.getElementById("footToMeter").value;
+        for (let i = 0; i < star.length; i++) {
+            if (a === star[i]) {
+                star[i] === chomStar[i];
+                return chomStar[i]
+            }
+        }
+        return "Khong tìm thấy";
+    }
+    function instar(){
+        document.getElementById("xuat1").innerHTML = f(star, chomStar, a);
+    }
+    // alert(f(star, chomStar, a));
+</script>
+</body>
+</html>

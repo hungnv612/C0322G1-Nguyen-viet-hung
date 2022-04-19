@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let arrayA = Array();
+    for (let i = 0; i < 5; i++) {
+        arrayA[i] = parseInt(prompt('Nhập vào 5 số nguyên bất kì: '));
+    }
+
+    function checkInt() {
+        let first = 0;
+        let last = arrayA.length - 1;
+        while (first < last) {
+            let b = arrayA[first];
+            arrayA[first] = arrayA[last];
+            arrayA[last] = b;
+            first++;
+            last--;
+        }
+        return(arrayA);
+    }
+    document.write(checkInt());
+</script>
+</body>
+</html>
