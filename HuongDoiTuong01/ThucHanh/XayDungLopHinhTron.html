@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Circle {
+        constructor(radius) {
+            this.radius=radius;
+        }
+        getRadius() {
+            return this.radius;
+        }
+        // setRadius(radius) {
+        //     this.radius=radius;
+        // }
+        areaCircle() {
+            return Math.PI * radius * radius;
+        }
+    }
+    let a =parseInt(prompt("Nhập Bán bính Hình Tròn......."))
+    let circle = new Circle(a);
+    let radius = circle.getRadius();
+    let area = circle.areaCircle();
+    alert("Bán Kính: " + radius + "; Diện tích: " + area);
+</script>
+</body>
+</html>

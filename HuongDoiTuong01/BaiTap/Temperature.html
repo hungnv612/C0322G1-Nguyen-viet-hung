@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p> Độ F= <label id="xuat1"></label></p>
+<p> Độ Kenvin = <label id="xuat2"></label></p>
+<button onclick="main()">RUN</button>
+<script>
+    class Temperature {
+        constructor(DoC) {
+            this.DoC = DoC;
+        }
+
+        DoF() {
+            return (parseFloat(this.DoC) * 1.8 + 32);
+        }
+
+        DoK() {
+            return (parseFloat(this.DoC) + 273.15);
+        }
+    }
+
+    let nhap;
+
+    function main() {
+        do {
+            nhap = parseInt(prompt("Nhập độ c > (-273)"));
+            let a = new Temperature(nhap);
+            let f = a.DoF();
+            let k = a.DoK();
+            document.getElementById("xuat1").innerHTML = f;
+            document.getElementById("xuat2").innerHTML = k;
+        } while (nhap <= -273);
+    }
+
+</script>
+</body>
+</html>
