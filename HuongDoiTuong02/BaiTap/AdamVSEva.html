@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        class Apple {
+            constructor(tltao) {
+                this.tltao = tltao;
+            }
+
+            setTao(tltao) {
+                this.tltao = tltao;
+            }
+            getTao() {
+                return this.tltao;
+            }
+            decrease() {
+                if (this.tltao > 0) {
+                    this.tltao--;
+                } else {
+                    return this.tltao = 0;
+                }
+            }
+        }
+        class Human {
+            constructor(name, gender, weight,speak) {
+                this.name = name;
+                this.gender = gender;
+                this.weight = weight;
+                this.speak = speak;
+            }
+
+            getWeight() {
+                return this.weight;
+            }
+            setApple(apple) {
+                this.apple = apple;
+            }
+            getApple() {
+                return this.apple.getTao();
+            }
+            CanTao() {
+                if (this.status) {
+                    this.weight++;
+                    document.write(this.name + "<br>"+this.gender +"<br>"+ "speak: " +this.speak+"<br>");
+                }
+            }
+            QuaTao() {
+                this.status = true;
+                return this.apple.decrease();
+            }
+        }
+        let tladam = parseInt(prompt("Weight adam......."))
+        let tleva = parseInt(prompt("Weight eva......."))
+        let tl = parseInt(prompt("Weight apple......."))
+        let adam = new Human("Adam ", "Male", tladam,"Ăn Nhanh lên " );
+        let eva = new Human("Eva ", "Femal", tleva,"Nhai lẹ lên" );
+        let apple = new Apple();
+        apple.setTao(tl);
+        adam.setApple(apple);
+        eva.setApple(apple);
+        for (let i = 0; i < tl/2; i++) {
+            adam.QuaTao();
+            adam.CanTao();
+            document.write("Trong lượng adam: " + adam.getWeight() + "=>" + "apple: " + adam.getApple() + "<br> ");
+            eva.QuaTao();
+            eva.CanTao();
+            document.write("Trong lượng eva: "+ "" + eva.getWeight() + "=>" + " apple: " + eva.getApple() + "<br> <hr>");
+        }
+
+    </script>
+</body>
+</html>
