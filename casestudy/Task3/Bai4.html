@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhap= prompt("nhập...........");
+    let mang1 = ['1','2','3','4','5','6','7','8','9'];
+    let mang2 = ["một","hai","ba","bốn","năm","sau","bảy","tám","chín"];
+    let mang3= '';
+    for (let i = 0; i <nhap.length ; i++) {
+        for (let j = 0; j <mang1.length ; j++){
+            if (nhap[i]==mang1[j]){
+                mang3 += '  '+mang2[j];
+            }
+        }
+
+    }alert(mang3);
+</script>
+</body>
+</html>

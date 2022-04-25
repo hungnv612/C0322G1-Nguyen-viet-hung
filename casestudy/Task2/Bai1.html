@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let luongr = parseInt(prompt("Nhập lương......."));
+    let luongts;
+    if(luongr < 7000000){
+        luongts =luongr-luongr*0.05;
+        document.write("Lương: "+luongr+"<br>"+"Tiền thuế phải nộp: "+(luongr*0.05)+"<br>"+"lương dc nhận: "+luongts);
+    }else if (luongr<15000000){
+        luongts = luongr-luongr*0.1;
+        document.write("Lương: "+luongr+"<br>"+"Tiền thuế phải nộp: "+(luongr*0.1)+"<br>"+"lương dc nhận: "+luongts);
+    }else{
+        luongts =luongr- luongr*0.2;
+        document.write("Lương: "+luongr+"<br>"+"Tiền thuế phải nộp: "+(luongr*0.2)+"<br>"+"lương dc nhận: "+luongts);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let flag=true;
+    let nhap;
+    let englishNA = ['o', 'u', 'i', 'a', 'e' ,'O', 'U', 'I', 'A', 'E'];
+    do {
+        nhap = prompt("Nhập một ký tự trong bản chữ cái english .......");
+        if(nhap.length===1) {
+            break;
+        }else {
+            alert("Nhập sai nhập lại.....")
+        }
+    }while (true)
+    for(let i=0;i < englishNA.length;i++){
+        if (nhap==englishNA[i]){
+            document.write(nhap+"===>"+" Là Nguyên âm");
+            flag=false;
+        }
+    }
+    if (flag==true){
+    document.write(nhap+"===>"+" Ko phải là Nguyên âm");
+    }
+
+</script>
+</body>
+</html>

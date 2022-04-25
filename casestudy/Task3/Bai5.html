@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let tong=0;
+    let mang1=[];
+    do {
+        let sum;
+        let sl ;
+        function TongTien() {
+        for (let i = 0; i <mang1.length ; i++) {
+            tong=tong+mang1[i]
+        }
+        }
+        let chon = parseInt(prompt("1 cafe \n2 cam vắt \n3 Nước ép cà rốt \n4 Nước ép cà chua \n5 Nước lọc \n6 Nước dừa \n7 thoát" ));
+        if (chon == 1){
+            sl=parseInt(prompt("Nhập số ly càn mua giá 1 ly là: 30k "));
+            sum=sl*30000;
+            mang1.push(sum);
+            TongTien();
+            alert("giá món vừa gọi: "+sum+"  Tổng tiền cần trả: "+tong);
+        }else if (chon==2){
+            sl=parseInt(prompt("Nhập số ly càn mua giá 1 ly là: 28k "));
+            sum=sl*28000;
+            mang1.push(sum);
+            TongTien();
+            alert("giá món vừa gọi: "+sum+"  Tổng tiền cần trả: "+tong);
+        }else if (chon==3){
+            sl=parseInt(prompt("Nhập số ly càn mua giá 1 ly là: 25k "));
+            sum=sl*25000;
+            mang1.push(sum);
+            TongTien();
+            alert("giá món vừa gọi: "+sum+"  Tổng tiền cần trả: "+tong);
+        }else if (chon==4){
+            sl=parseInt(prompt("Nhập số ly càn mua giá 1 ly là: 32k "));
+            sum=sl*32000;
+            mang1.push(sum);
+            TongTien();
+            alert("giá món vừa gọi: "+sum+"  Tổng tiền cần trả: "+tong);
+        }else if (chon==5){
+            sl=parseInt(prompt("Nhập số ly càn mua giá 1 ly là: 39k "));
+            sum=sl*39000;
+            mang1.push(sum);
+            TongTien();
+            alert("giá món vừa gọi: "+sum+"  Tổng tiền cần trả: "+tong);
+        }else if (chon==6){
+            sl=parseInt(prompt("Nhập số ly càn mua giá 1 ly là: 35k "));
+            sum=sl*35000;
+            mang1.push(sum);
+            TongTien();
+            alert("giá món vừa gọi: "+sum+"  Tổng tiền cần trả: "+tong);
+        }else if (chon==7){
+            TongTien();
+            alert("Tổng số tiền các món cần thanh toán: "+tong);
+           break;
+        }else {
+            alert("Hiện tại ko có trường trình này vui lòng chọn lại....")
+        }
+    }while (true);
+</script>
+</body>
+</html>
